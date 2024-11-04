@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/2e3e5f7103.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/l2.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <!-- <li><a href="#">Portfolio</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
+                    <!-- <i class="fa-solid fa-xmark" onclick="closemenu()"></i> -->
+                </ul>
+                <!-- <i class="fa-solid fa-bars" onclick="openmenu()"></i> -->
+            </nav>
+            <div class="header-text">
+                <p>Java Developer</p>
+                <h1>Hi,I'm <span>Niranjan</span><br> Naik From India... </h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------------------------------about-------------------- ------------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/aboutMe.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>I am a passionate Java Developer currently pursuing my BTech in 
+                        Computer Science and Engineering from MIT ADT University. 
+                        I have a strong foundation in Data Structures and Algorithms (DSA) 
+                        with Java, which I’ve utilized to solve complex problems efficiently.
+                         Along with my core focus on Java, I have hands-on experience in
+                          Spring Boot, enabling me to 
+                        build robust and scalable web applications.
+                        <br>
+                        In addition, I have knowledge of web development, which allows me to create dynamic 
+                        and user-friendly websites. My continuous learning approach keeps me up-to-date with 
+                        the latest technologies, and I am always ready to take on new challenges
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web development</span><br>Designing Webpage interfaces</li>
+                            <li><span>Java-DSA</span><br>Competative programming</li>
+                            <li><span>Database</span><br>SQL</li>
+                            <li><span>Leadership</span><br>Inspiring teamwork</li>
+                            <li><span>Negotiation</span><br>Finding common ground</li>
+                        </u>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Web development projects</span><br>Designing Webpages interfaces</li>
+                            <li><span>Web development Intern</span><br>Web Development Intern at Unified Mentor</li>
+
+                        
+                        </u>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2027</span><br>BTech From MIT-ADT University,Pune  CGPA- 8.5(Sem-2)</li>
+                            <li><span>2023</span><br>HSC from RPD HighSchool,Sawantwadi  Grade- 82%</li>
+                            <li><span>2021</span><br>SSC from RPD HighSchool,Sawantwadi  Grade- 81.80%</li>
+                        </u>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- -------------------------------------services------------------------------------------ -->
+<div id="services">
+    <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web development</h2>
+                <p>I develop dynamic, user-friendly websites with a seamless 
+                    integration of front-end and back-end technologies. 
+                    My focus is on delivering responsive, 
+                    interactive web experiences that meet modern web standards.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-java"></i>
+                <h2> Java Development</h2>
+                <p>I specialize in building efficient, scalable applications using Java, 
+                    with experience in developing robust back-end systems and microservices
+                     using Spring Boot. I focus on creating secure, 
+                    high-performance solutions for various business needs</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Database design and Management</h2>
+                <p>I design and manage relational databases to ensure optimal data 
+                    storage, retrieval, and scalability. I write efficient SQL queries 
+                    and ensure smooth integration between 
+                    the application and database for performance-oriented solutions</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------------------portfolio------------------------------------ -->
+<!-- --------------------contact_------------------------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> naikniranjan300305@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 7378861795</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/niranjan__naik.30?igsh=MWo4dmViOWowanpmZQ=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/niranjan-naik-691347307"><i class="fa-brands fa-linkedin"></i></i></a>
+                    <a href="https://www.facebook.com/share/qCa1j8miey8zECqU/?mibextid=qi2Omg"><i class="fa-brands fa-facebook"></i></i></a>
+                </div>
+                <a href="images/Niranjan_CV.docx" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+ 
+        </div>
+    </div>
+    <div class="copyright">
+        <p> copyright ©️ by Niranjan...Made with <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+
+    var sidemenu=decument.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function openmenu(){
+        sidemenu.style.right="-200px";
+    }
+
+
+
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx7S6bqSb-meCHmtCR-FZUb8l920jsOxO8QOgUzaGq893pyLD3l0LHuI6P3PFHSdRBs/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg= document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+</body>
+</html>
